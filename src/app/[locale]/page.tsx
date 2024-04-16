@@ -1,7 +1,8 @@
+import { Button, Typography } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
 export default function Index() {
 	const t = useTranslations('Index');
-	return <h1>{t('title')}</h1>;
+	return <Button variant="outlined">{t('title')}</Button>;
 }
